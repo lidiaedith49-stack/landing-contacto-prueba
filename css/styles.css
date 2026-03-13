@@ -1,0 +1,198 @@
+body {
+    /*background:  linear-gradient(rgba(3, 71, 142, 1),rgba(10,20,60,0.6)), url(/images/TEXTURE_page-0001.jpg);*/
+    background: radial-gradient(circle at center,
+     rgb(3 71 142 / 93%) 20%, rgb(3 71 142 / 98%) 30%, rgb(10 30 90 / 47%) 70%), url(/images/TEXTURE_page-0001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px 10px;
+}
+
+.logo {
+
+   padding-bottom: 65px;
+   text-align: center;
+   opacity: 0.92;
+}
+
+.links-contacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 50px 0 0;
+}
+
+.links-contacto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(180deg, #031346f5); 
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.links-contacto a,
+.whatsapp a{
+cursor:pointer;
+}
+
+.links-contacto a:hover{
+background: linear-gradient(145deg, #041549, #1e3a7a);
+transform: translateY(-2px);
+filter: brightness(1.1);
+}
+
+a.phone:hover {
+    color: white;
+}
+
+i{
+    color: #f9e447;
+    font-size: 26px;
+}
+.fa-whatsapp{
+    color: white;
+    
+}
+
+a.phone {
+    background: white;
+    color: black;
+    font-weight: 500;
+}
+
+section.whatsapp {
+    display: flex;
+    justify-content: center;
+}
+.whatsapp a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    background: #44b348;
+    margin-top: 10px;
+    width: 517px;
+    font-weight: 500;
+}
+
+.whatsapp a:hover { 
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.text-cookies{
+    color: white;
+}
+ 
+
+
+.text-cookies{
+  margin-top: 75px;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 65px 0 0;
+}
+
+.text-cookies p{
+    font-size: 9px;
+    margin:0;
+    font-weight: 400;
+}
+h3{
+    margin: 30px 0 0;
+}
+
+
+/*****   RESPONSIVE               *********/
+
+
+@media (max-width:1024px){
+
+.links-contacto{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media (max-width:768px){
+
+.links-contacto{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+
+@media (max-width:480px){
+    .container {
+        max-width: 320px;
+        margin: auto;
+    }
+  .links-contacto{
+    grid-template-columns: 1fr;
+    max-width: 180px;
+    margin: auto;
+  }
+
+  .links-contacto a{
+    font-size: 11px;
+    font-weight: 400;
+  }
+  
+  img {
+    max-width: 180px;
+}
+section.whatsapp {
+    max-width: 180px;
+    margin: auto;
+}
+.whatsapp a{
+    font-weight: 600;
+    font-size: 11px;
+}
+section.text-cookies {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.text-cookies p {
+    font-size: 7.5px;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+i{
+    font-size: 20px;
+}
+
+}
+
